@@ -19,25 +19,25 @@ public class Main {
         int speed = arrow.getDamage();
         System.out.println(arrow);
 
-        Enemy greenOgre = new Enemy("greenOgre", 30, 20 );
+        Ogre greenOgre = new Ogre("Green","Poison Spit");
         System.out.println(greenOgre);
 
-        Enemy redOgre = new Enemy("redOgre", 30, 20);
+        Ogre redOgre = new Ogre("Red","Lava Spit");
         System.out.println(redOgre);
 
-        Enemy slowZombie = new Enemy("SlowZombie", 20, 15);
+        Zombie slowZombie = new Zombie (10);
         System.out.println(slowZombie);
 
-        Enemy fastZombie = new Enemy("FastZombie", 20, 15);
+        Zombie fastZombie = new Zombie(15);
         System.out.println(fastZombie);
 
-        Enemy spotDog = new Enemy("SpotDog", 10, 10);
+        Dog spotDog = new Dog ("Can smell blood",20);
         System.out.println(spotDog);
 
-        Enemy GiantSpider = new Enemy("GiantSpider", 10, 5);
+        GiantSpider GiantSpider = new GiantSpider("Spider with two heads");
         System.out.println(GiantSpider);
 
-        Enemy BlackBeard = new Enemy("DarkWizard",50,20);
+        BlackBeard BlackBeard = new BlackBeard("He can lay traps",20);
         System.out.println(BlackBeard);
     }
 
