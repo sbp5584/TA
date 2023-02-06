@@ -1,6 +1,9 @@
 public class Zombie extends Enemy{
-    public Zombie(){
-        super("Zombie", 20, 15);
+    private int Speed;
+
+    public Zombie(int Speed){
+        super("Zombie","Velocity" ,20, 15);
+        this.Speed = Speed;
     }
 
 }
