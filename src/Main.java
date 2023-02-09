@@ -39,6 +39,27 @@ public class Main {
 
         BlackBeard BlackBeard = new BlackBeard("He can lay traps",20);
         System.out.println(BlackBeard);
-    }
 
+        MoveEast moveEast = new MoveEast();
+        System.out.println(moveEast.Str());
+
+        MoveWest moveWest = new MoveWest();
+        System.out.println(moveWest.Str());
+
+        MoveNorth moveNorth = new MoveNorth();
+        System.out.println(moveNorth.Str());
+
+        MoveSouth moveSouth = new MoveSouth();
+        System.out.println(moveSouth.Str());
+
+        Action flee = new Flee();
+        System.out.println(flee.Str());
+
+        Action viewInventory = new ViewInventory();
+        System.out.println(viewInventory.Str());
+
+        Prone prone = new Prone();
+        System.out.println(prone.Str());
     }
+}
+
