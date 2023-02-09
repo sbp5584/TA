@@ -5,6 +5,6 @@ public class Ogre extends Enemy {
         super("Ogre","Spit" ,30, 20 );
         this.color = color;
         this.spit = spit;
-//
+
     }
 }
