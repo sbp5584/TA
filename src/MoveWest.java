@@ -3,3 +3,4 @@ public class MoveWest extends Action {
         super(Method.MoveWest, "Move West", 'w', null);
     }
 }
+//
