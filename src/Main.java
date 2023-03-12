@@ -60,7 +60,10 @@ public class Main {
 
         Prone prone = new Prone();
         System.out.println(prone.Str());
+
+        World world = new World();
+        world.loadTiles();
     }
+
 }
 
-//

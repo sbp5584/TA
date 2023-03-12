@@ -2,6 +2,7 @@ public class Action {
     private Method method;
     private char hotkey;
 
+
     private char getHotkey(){
         return hotkey;
 

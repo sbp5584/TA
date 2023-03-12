@@ -1,0 +1,5 @@
+ 	 	 	 	LeaveCaveRoom
+			CyclopsRoom
+ 	 	 	EmptyCavePath
+ 	 	 	TreasureRoom
+OgreRoom	TreasureRoom	StartingRoom	TreasureRoom
