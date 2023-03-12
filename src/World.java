@@ -6,15 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class World {
-    public static String[][] world;
-    private static Point startingPosition = new Point(0, 0);
-    public static ArrayList<MapTile> history = new ArrayList<MapTile>();
+    private String[][] world;
+    private Point startingPosition = new Point(0, 0);
+    private List<MapTile> history = new ArrayList<>();
 
+    /**
+     * Loads the map from the map.txt file.
+     */
     public void loadTiles() {
         List<String[]> rows = new ArrayList<>();
-        try (BufferedReader f = new BufferedReader(new FileReader("src/map.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/map.txt"))) {
             String row;
-            while ((row = f.readLine()) != null) {
+            while ((row = reader.readLine()) != null) {
                 rows.add(row.split("\t"));
             }
             int xMax = rows.get(0).length;
@@ -35,17 +38,24 @@ public class World {
         }
     }
 
-    public static String[][] getWorld() {
+    /**
+     * Returns the map as a 2D array of strings.
+     */
+    public String[][] getWorld() {
         return world;
     }
 
-    public static Point getStartingPosition() {
+    /**
+     * Returns the starting position on the map as a Point.
+     */
+    public Point getStartingPosition() {
         return startingPosition;
     }
 
-    public static ArrayList<MapTile> getHistory() {
+    /**
+     * Returns the list of MapTiles that the player has visited.
+     */
+    public List<MapTile> getHistory() {
         return history;
     }
-
-
 }
