@@ -1,0 +1,5 @@
+ 	 	 	 	LeaveFunHouse
+			DemonRoom	EmptyHallWay
+ 	 	 	BansheesRoom
+ 	 	 	TreasureRoom	 
+DemonRoom	WraithRoom	StartingRoom	EmptyHallWay	FindDaggerRoom
